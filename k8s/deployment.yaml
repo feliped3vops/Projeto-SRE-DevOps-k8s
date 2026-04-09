@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myappp
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: meu-webserver
+  template:
+    metadata:
+      labels:
+        app: meu-webserver
+    spec:
+      containers:
+      - name: meu-webserver-nginx
+        image: feliped3vops/webserver:v1.0
+        ports:
+        - containerPort: 80

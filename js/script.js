@@ -15,7 +15,6 @@ function showInfo() {
 ⚡ Servidor: Nginx
 🌐 Porta: 80
 📅 Deploy: ${timestamp}
-☁️ Cloud: AWS EC2
 🔄 Status: Online
     `;
     
@@ -35,9 +34,7 @@ function updateStatus() {
         
         serverStatus.textContent = 'Nginx Online';
         serverStatus.className = 'status-value active';
-        
-        environment.textContent = 'AWS EC2 - Rodando';
-        environment.className = 'status-value active';
+
     }, 1000);
 }
 
