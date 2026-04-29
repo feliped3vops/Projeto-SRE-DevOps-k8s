@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: myappp
 spec:
-  replicas: 5
+  replicas: 15
   selector:
     matchLabels:
       app: meu-webserver
